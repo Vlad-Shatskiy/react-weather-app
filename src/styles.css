@@ -1,0 +1,208 @@
+html > * {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  background-color: #498cec;
+  color: white;
+}
+
+.header {
+  font-family: "Montserrat";
+  font-size: 50px;
+  line-height: 61px;
+  margin: 0;
+}
+
+.time {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.change__city {
+  /* font-family: "Lato"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  border: "none";
+}
+::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.input:focus {
+  border: 0;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.select__time {
+  display: flex;
+  justify-content: flex-start;
+  gap: 45px;
+}
+
+.current__location {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+  width: 700;
+  height: 700;
+  /* margin: 3rem; */
+  flex: 1 1 100%;
+
+  /* margin-bottom: auto; */
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px 0 50px;
+  flex-basis: 33%;
+  /* margin: 50px; */
+
+  height: 90vh;
+}
+
+.carousel {
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+.carousel > * {
+  justify-self: flex-end;
+}
+.temp__now {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 108px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather__description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.weather__props {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  padding-top: 30px;
+  gap: 15px;
+}
+
+.weather__card {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather__timezone {
+  display: flex;
+  justify-content: center;
+}
+.weather__img {
+  display: flex;
+  justify-content: center;
+}
+
+.weather__timezone_temp {
+  display: flex;
+  justify-content: center;
+}
+
+.choose__city {
+  font-family: "Montserrat";
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border: "none";
+  border-radius: 8px;
+  color: #000000;
+  width: 282px;
+  height: 55px;
+  padding: 10;
+  text-align: center;
+}
+
+.choose__city::placeholder {
+  /* Chrome, Firefo
+    x, Opera, Safari 10.1+ */
+
+  color: #000000;
+  /* opacity: 1; */
+}
+
+button {
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.location__button {
+  font-family: "Montserrat";
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiAutocomplete-root {
+  color: black;
+}
+
+.textfield-input::placeholder {
+  color: "red";
+  opacity: 1;
+}
+
+::placeholder {
+  color: #666666;
+}
