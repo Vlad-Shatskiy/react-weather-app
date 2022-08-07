@@ -115,7 +115,7 @@ export default function GetWeather() {
   }
 
   async function handleLocation() {
-    const url = "http://ipwho.is/?lang=ru";
+    const url = "https://ipwho.is/?lang=ru";
     const response = await fetch(url);
     const data = await response.json();
     setCurrentLocation(data.city);
