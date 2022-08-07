@@ -91,7 +91,7 @@ export default function GetWeather() {
         style={{
           ...style,
           display: "block",
-          background: "rgba(255, 255, 255, 0.42)",
+          background: "transparent",
           marginRight: "25px",
         }}
         onClick={onClick}
@@ -106,7 +106,7 @@ export default function GetWeather() {
         style={{
           ...style,
           display: "block",
-          background: "rgba(255, 255, 255, 0.42)",
+          background: "transparent",
           marginLeft: "25px",
         }}
         onClick={onClick}
@@ -115,7 +115,7 @@ export default function GetWeather() {
   }
 
   async function handleLocation() {
-    const url = "https://ipinfo.io/json?token=7cab483962e34e&lang=ru";
+    const url = "http://ipwho.is/?lang=ru";
     const response = await fetch(url);
     const data = await response.json();
     setCurrentLocation(data.city);
@@ -133,11 +133,7 @@ export default function GetWeather() {
       <div className="heading">
         <div className="select__time">
           {currentLocation.length >= 5 || inputValue.length >= 5 ? (
-            <div className="header">
-              {currentLocation === "Tashkent"
-                ? "Ташкент"
-                : inputValue || currentLocation}
-            </div>
+            <div className="header">{inputValue || currentLocation}</div>
           ) : (
             <Autocomplete
               value={value}
